@@ -1,0 +1,16 @@
+.portfolio__title {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #000000;
+  font-size: 32px;
+  line-height: 36px;
+}
+.portfolioItem__title {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=portfolio.css.map */

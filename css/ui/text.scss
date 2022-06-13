@@ -1,0 +1,9 @@
+@import "../variables";
+
+@mixin text($color: $font-primary) {
+  font-family: 'PTMono-Regular', serif, sans-serif, cursive, fantasy, monospace;
+  color: $color;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2em;
+}

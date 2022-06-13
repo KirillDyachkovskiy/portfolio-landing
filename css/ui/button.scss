@@ -1,0 +1,34 @@
+@import "../variables";
+
+@mixin button($background: $button-accent-background, $color: $button-accent-color) {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 14px 20px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  user-select: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: $background;
+  border-radius: 4px;
+  font-family: 'Montserrat', serif, sans-serif, cursive, fantasy, monospace;
+  font-size: 18px;
+  font-weight: 800;
+  color: $color;
+  line-height: 24px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    filter: brightness(130%);
+  }
+
+  &:not(:disabled) {
+    &:active {
+      transform: scale(0.85);
+    }
+  }
+}

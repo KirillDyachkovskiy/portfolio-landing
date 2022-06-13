@@ -1,0 +1,16 @@
+@mixin image($width: 100px, $height: $width) {
+  width: $width;
+  height: $height;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+
+  image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}

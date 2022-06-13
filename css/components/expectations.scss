@@ -1,0 +1,30 @@
+@import "../ui/title";
+@import "../ui/subtitle";
+
+.expectations {
+  &__title {
+    @include title(2);
+  }
+
+  &__list {
+
+  }
+
+  &__li {
+
+  }
+
+  &__item {
+
+  }
+}
+
+.expectationsItem {
+  &__title {
+    @include title(3);
+  }
+
+  &__text {
+    @include subtitle($font-grey);
+  }
+}

@@ -1,0 +1,43 @@
+.button {
+  display: flex;
+  align-items: baseline;
+  appearance: none;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 10px 17px;
+  font-size: var(--px16);
+  font-weight: var(--w700);
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  white-space: nowrap;
+  box-sizing: border-box;
+  user-select: none;
+}
+.button:focus {
+  outline: none;
+}
+.button:disabled {
+  cursor: not-allowed;
+  background-color: var(--white);
+  border: 1px solid var(--gray);
+  color: var(--gray);
+}
+.button:not(:disabled):active {
+  transform: scale(0.9);
+}
+
+.button_type_orange {
+  background-color: var(--white);
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+.button_type_orange .button__circle {
+  background-color: var(--orange);
+}
+.button_type_orange:not(:disabled):hover, .button_type_orange:not(:disabled):active, .button_type_orange:not(:disabled):focus-visible {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=button.css.map */

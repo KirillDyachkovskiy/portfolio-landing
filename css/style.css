@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Mono&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.profile__image {
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  margin-bottom: 16px;
+  width: 360px;
+  height: 360px;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+.profile__image image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.profile__info {
+  text-align: center;
+}
+.profile__name {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #000000;
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 8px;
+}
+.profile__bio {
+  font-family: "PTMono-Regular", serif, sans-serif, cursive, fantasy, monospace;
+  color: #777777;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.profile__button {
+  width: 280px;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 14px 20px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  user-select: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #0059D9;
+  border-radius: 4px;
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 24px;
+}
+.profile__button:focus {
+  outline: none;
+}
+.profile__button:hover {
+  filter: brightness(130%);
+}
+.profile__button:not(:disabled):active {
+  transform: scale(0.85);
+}
+
+.expectations__title {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #000000;
+  font-size: 32px;
+  line-height: 36px;
+}
+.expectationsItem__title {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}
+.expectationsItem__text {
+  font-family: "PTMono-Regular", serif, sans-serif, cursive, fantasy, monospace;
+  color: #777777;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+
+.portfolio__title {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 36px;
+}
+.portfolioItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.portfolioItem__info {
+  text-align: center;
+}
+.portfolioItem__title {
+  font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+.portfolioItem__link {
+  text-decoration: none;
+  font-family: "PTMono-Regular", serif, sans-serif, cursive, fantasy, monospace;
+  color: #71ABFF;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.portfolioItem__image {
+  background-color: cornflowerblue;
+  width: 700px;
+  height: 377px;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+.portfolioItem__image image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+  background-color: #eff1f2;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 15px;
+}
+
+.whiteWrapper {
+  background-color: #ffffff;
+}
+
+.greyWrapper {
+  background-color: #25282A;
+}
+
+/*# sourceMappingURL=style.css.map */

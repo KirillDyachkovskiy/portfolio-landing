@@ -1,0 +1,53 @@
+@import "../ui/title";
+@import "../ui/subtitle";
+@import "../ui/image";
+
+.portfolio {
+  &__header {
+
+  }
+
+  &__title {
+    @include title(2, $font-secondary);
+  }
+
+  &__description {
+
+  }
+
+  &__main {
+
+  }
+
+  &__item {
+
+  }
+}
+
+.portfolioItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__info {
+    text-align: center;
+  }
+
+  &__title {
+    @include title(3, $font-secondary);
+  }
+
+  &__link {
+    text-decoration: none;
+    @include subtitle($font-link);
+  }
+
+  &__image {
+    background-color: cornflowerblue;
+    @include image(700px, 377px);
+  }
+
+  &__description {
+
+  }
+}

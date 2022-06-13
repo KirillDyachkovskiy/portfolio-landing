@@ -1,0 +1,20 @@
+@import "../variables";
+
+@mixin title($level, $color: $font-primary) {
+  font-family: 'Montserrat', serif, sans-serif, cursive, fantasy, monospace;
+  font-weight: 800;
+  color: $color;
+
+  @if $level == 1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @if $level == 2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  @if $level == 3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
