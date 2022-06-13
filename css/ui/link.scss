@@ -1,0 +1,19 @@
+@import "../variables";
+
+@mixin link($color: $link-color) {
+  font-family: 'PTMono-Regular', serif, sans-serif, cursive, fantasy, monospace;
+  color: $color;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2em;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover, &:focus {
+    color: $link-hover-color;
+  }
+}

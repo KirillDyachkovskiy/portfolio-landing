@@ -187,15 +187,19 @@ table {
   line-height: 24px;
 }
 .portfolioItem__link {
-  text-decoration: none;
   font-family: "PTMono-Regular", serif, sans-serif, cursive, fantasy, monospace;
   color: #71ABFF;
+  text-decoration: none;
+  outline: none;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2em;
 }
-.portfolioItem__link :hover {
-  filter: brightness(130%);
+.portfolioItem__link:visited {
+  color: #623cc5;
+}
+.portfolioItem__link:hover, .portfolioItem__link:focus {
+  color: #296abb;
 }
 .portfolioItem__image {
   width: 700px;

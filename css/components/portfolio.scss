@@ -1,5 +1,6 @@
 @import "../ui/title";
 @import "../ui/subtitle";
+@import "../ui/link";
 @import "../ui/image";
 @import "../ui/text";
 
@@ -39,12 +40,7 @@
   }
 
   &__link {
-    text-decoration: none;
-    @include subtitle($font-link);
-
-    :hover {
-      filter: brightness(130%);
-    }
+    @include link();
   }
 
   &__image {
