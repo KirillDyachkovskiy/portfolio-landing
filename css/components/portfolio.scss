@@ -11,6 +11,7 @@
 
   &__title {
     @include title(2, $font-secondary);
+    margin-bottom: 8px;
   }
 
   &__subtitle {
@@ -40,10 +41,13 @@
   &__link {
     text-decoration: none;
     @include subtitle($font-link);
+
+    :hover {
+      filter: brightness(130%);
+    }
   }
 
   &__image {
-    background-color: cornflowerblue;
     @include image(700px, 377px);
   }
 
