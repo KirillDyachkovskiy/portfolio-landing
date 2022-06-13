@@ -1,26 +1,26 @@
 @import "../ui/title";
 @import "../ui/subtitle";
 @import "../ui/image";
+@import "../ui/text";
 
 .portfolio {
   &__header {
-
+    text-align: center;
+    margin-bottom: 80px;
   }
 
   &__title {
     @include title(2, $font-secondary);
   }
 
-  &__description {
-
+  &__subtitle {
+    @include subtitle($font-secondary);
   }
 
   &__main {
-
-  }
-
-  &__item {
-
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
   }
 }
 
@@ -47,7 +47,8 @@
     @include image(700px, 377px);
   }
 
-  &__description {
-
+  &__text {
+    width: 75%;
+    @include text($font-secondary);
   }
 }

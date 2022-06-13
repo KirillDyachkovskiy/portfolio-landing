@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Mono&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=PT+Mono&family=PT+Sans&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -147,6 +145,10 @@ table {
   letter-spacing: 0.2em;
 }
 
+.portfolio__header {
+  text-align: center;
+  margin-bottom: 80px;
+}
 .portfolio__title {
   font-family: "Montserrat", serif, sans-serif, cursive, fantasy, monospace;
   font-weight: 800;
@@ -154,6 +156,19 @@ table {
   font-size: 32px;
   line-height: 36px;
 }
+.portfolio__subtitle {
+  font-family: "PTMono-Regular", serif, sans-serif, cursive, fantasy, monospace;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+}
+.portfolio__main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .portfolioItem {
   display: flex;
   flex-direction: column;
@@ -193,6 +208,14 @@ table {
   left: 0;
   object-fit: cover;
 }
+.portfolioItem__text {
+  width: 75%;
+  font-family: "PT Sans", serif, sans-serif, cursive, fantasy, monospace;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;

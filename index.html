@@ -44,7 +44,7 @@
       <section class="portfolio">
         <header class="portfolio__header">
           <h2 class="portfolio__title">Мои работы</h2>
-          <p class="portfolio__description">Собраны избранные реально работающие проекты</p>
+          <p class="portfolio__subtitle">Собраны избранные реально работающие проекты</p>
         </header>
         <main class="portfolio__main">
           <article class="portfolio__item portfolioItem">
@@ -59,7 +59,7 @@
             <div class="portfolioItem__image">
               <img src="#" alt="avatar"/>
             </div>
-            <p class="portfolioItem__description">Межзвездная матеpия на следующий год, когда было лунное затмение и
+            <p class="portfolioItem__text">Межзвездная матеpия на следующий год, когда было лунное затмение и
               сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает
               ионный хвост.</p>
           </article>
@@ -75,7 +75,7 @@
             <div class="portfolioItem__image">
               <img src="#" alt="avatar"/>
             </div>
-            <p class="portfolioItem__description">Межзвездная матеpия на следующий год, когда было лунное затмение и
+            <p class="portfolioItem__text">Межзвездная матеpия на следующий год, когда было лунное затмение и
               сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает
               ионный хвост.</p>
           </article>
@@ -83,33 +83,31 @@
       </section>
     </div>
   </div>
-  <div class="lightgreyWrapper">
-    <div class="container">
-      <section class="contacts">
-        <header class="contacts__header">
-          <h2 class="contacts__title">Контактная информация</h2>
-          <div class="contacts__icons">
-            <i></i>
-          </div>
-          <p class="contacts__description">Я открыт для новых проектов. Вы можете прислать мне для оценки примерное
-            техническое задание или просто описание проекта своими словами.</p>
-        </header>
-        <form class="contacts__form contactsForm">
-          <div class="contactsForm__inputs">
-            <label for="name">
-              <input id="name" type="text" placeholder="Как вас зовут?"/>
-            </label>
-            <label for="email">
-              <input id="email" type="email" placeholder="Почтовый ящик?"/>
-            </label>
-          </div>
-          <label for="message">
-            <textarea id="message" class="contacts__textarea" placeholder="Сообщение"></textarea>
+  <div class="container">
+    <section class="contacts">
+      <header class="contacts__header">
+        <h2 class="contacts__title">Контактная информация</h2>
+        <div class="contacts__icons">
+          <i></i>
+        </div>
+        <p class="contacts__subtitle">Я открыт для новых проектов. Вы можете прислать мне для оценки примерное
+          техническое задание или просто описание проекта своими словами.</p>
+      </header>
+      <form class="contacts__form contactsForm">
+        <div class="contactsForm__inputs">
+          <label for="name">
+            <input id="name" class="contacts__input" type="text" placeholder="Как вас зовут?"/>
           </label>
-          <button>Отправить</button>
-        </form>
-      </section>
-    </div>
+          <label for="email">
+            <input id="email" class="contacts__input" type="email" placeholder="Почтовый ящик?"/>
+          </label>
+        </div>
+        <label for="message">
+          <textarea id="message" class="contacts__textarea" placeholder="Сообщение"></textarea>
+        </label>
+        <button class="contacts__button">Отправить</button>
+      </form>
+    </section>
   </div>
 </div>
 </body>
