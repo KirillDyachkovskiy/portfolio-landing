@@ -3,6 +3,7 @@
 @import "../ui/link";
 @import "../ui/image";
 @import "../ui/text";
+@import "../ui/slider";
 
 .portfolio {
   &__header {
@@ -43,12 +44,15 @@
     @include link();
   }
 
-  &__image {
-    @include image(700px, 377px);
-  }
-
   &__text {
-    width: 75%;
     @include text($font-secondary);
   }
+}
+
+.slider {
+  @include slider(slider, 4, 700px, 377px, 8px);
+}
+
+.slider2 {
+  @include slider(slider2, 4, 700px, 377px, 8px);
 }

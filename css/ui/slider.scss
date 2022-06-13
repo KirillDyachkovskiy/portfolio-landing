@@ -1,0 +1,69 @@
+@import "../variables";
+@import "image";
+
+@mixin slider($name: slider, $count: 1, $width: 1100px, $height: 600px, $border-radius: 0) {
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  position: relative;
+
+  &__navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  &__bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: $slider-bar-color;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+
+    &:hover {
+      background-color: $slider-bar-active-color;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  &__radio {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
+
+  &__tape {
+    width: calc(#{$count} * 100%);
+    height: 100%;
+    display: flex;
+  }
+
+  &__image {
+    flex: 0 0 calc(100% / #{$count});
+    transition: all .6s ease;
+
+    @include image($width, $height, $border-radius);
+  }
+
+  @for $i from 1 through $count {
+    ##{$name}_#{$i}:checked {
+      & ~ .#{$name}__first {
+        margin-left: calc(-1 * (#{$i} - 1) * 100% / #{$count});
+      }
+
+      & ~ .#{$name}__navigation #bar_#{$name}_#{$i} {
+        background-color: $slider-bar-active-color;
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

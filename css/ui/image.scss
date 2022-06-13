@@ -1,4 +1,5 @@
-@mixin image($width: 100px, $height: $width) {
+@mixin image($width: 100px, $height: $width, $border-radius: 0) {
+  border-radius: $border-radius;
   width: $width;
   height: $height;
   position: relative;

@@ -18,7 +18,7 @@
         <h1 class="profile__name">Кирилл Мохначевский</h1>
         <p class="profile__bio">Фронтэнд разработчик из России</p>
       </div>
-      <button class="profile__button">Связаться</button>
+      <button class="profile__button" type="button">Связаться</button>
     </section>
   </div>
   <div class="whiteWrapper">
@@ -56,8 +56,31 @@
                 map.letapis.by
               </a>
             </div>
-            <div class="portfolioItem__image">
-              <img src="#" alt="avatar"/>
+            <div class="portfolioItem__slider slider">
+              <div class="slider__tape">
+                <input type="radio" name="slider" id="slider_1" class="slider__radio" checked>
+                <input type="radio" name="slider" id="slider_2" class="slider__radio">
+                <input type="radio" name="slider" id="slider_3" class="slider__radio">
+                <input type="radio" name="slider" id="slider_4" class="slider__radio">
+                <div class="slider__image slider__first">
+                  <img src="img/slider1/1.jpg" alt="avatar"/>
+                </div>
+                <div class="slider__image">
+                  <img src="img/slider1/2.jpg" alt="avatar"/>
+                </div>
+                <div class="slider__image">
+                  <img src="img/slider1/3.jpg" alt="avatar"/>
+                </div>
+                <div class="slider__image">
+                  <img src="img/slider1/4.jpg" alt="avatar"/>
+                </div>
+                <div class="slider__navigation">
+                  <label for="slider_1" class="slider__bar" id="bar_slider_1"></label>
+                  <label for="slider_2" class="slider__bar" id="bar_slider_2"></label>
+                  <label for="slider_3" class="slider__bar" id="bar_slider_3"></label>
+                  <label for="slider_4" class="slider__bar" id="bar_slider_4"></label>
+                </div>
+              </div>
             </div>
             <p class="portfolioItem__text">Межзвездная матеpия на следующий год, когда было лунное затмение и
               сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает
@@ -72,8 +95,31 @@
                 poster.letapis.by
               </a>
             </div>
-            <div class="portfolioItem__image">
-              <img src="#" alt="avatar"/>
+            <div class="portfolioItem__slider slider2">
+              <div class="slider2__tape">
+                <input type="radio" name="slider2" id="slider2_1" class="slider2__radio">
+                <input type="radio" name="slider2" id="slider2_2" class="slider2__radio">
+                <input type="radio" name="slider2" id="slider2_3" class="slider2__radio">
+                <input type="radio" name="slider2" id="slider2_4" class="slider2__radio" checked>
+                <div class="slider2__image slider2__first">
+                  <img src="img/slider1/1.jpg" alt="avatar"/>
+                </div>
+                <div class="slider2__image">
+                  <img src="img/slider1/2.jpg" alt="avatar"/>
+                </div>
+                <div class="slider2__image">
+                  <img src="img/slider1/3.jpg" alt="avatar"/>
+                </div>
+                <div class="slider2__image">
+                  <img src="img/slider1/4.jpg" alt="avatar"/>
+                </div>
+                <div class="slider2__navigation">
+                  <label for="slider2_1" class="slider2__bar" id="bar_slider2_1"></label>
+                  <label for="slider2_2" class="slider2__bar" id="bar_slider2_2"></label>
+                  <label for="slider2_3" class="slider2__bar" id="bar_slider2_3"></label>
+                  <label for="slider2_4" class="slider2__bar" id="bar_slider2_4"></label>
+                </div>
+              </div>
             </div>
             <p class="portfolioItem__text">Межзвездная матеpия на следующий год, когда было лунное затмение и
               сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает
@@ -89,13 +135,13 @@
         <h2 class="contacts__title">Контактная информация</h2>
         <div class="contacts__icons">
           <div class="contacts__icon">
-            <img src="img/vkontakte.png" alt="vkontakte"/>
+            <img src="img/socials/vkontakte.png" alt="vkontakte"/>
           </div>
           <div class="contacts__icon">
-            <img src="img/github.png" alt="github"/>
+            <img src="img/socials/github.png" alt="github"/>
           </div>
           <div class="contacts__icon">
-            <img src="img/telegram.png" alt="telegram"/>
+            <img src="img/socials/telegram.png" alt="telegram"/>
           </div>
         </div>
         <p class="contacts__subtitle">Я открыт для новых проектов. Вы можете прислать мне для оценки примерное

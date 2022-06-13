@@ -11,11 +11,8 @@
   gap: 20px;
 
   &__image {
-    border-radius: 50%;
-    background-color: cornflowerblue;
     margin-bottom: 16px;
-
-    @include image(360px);
+    @include image(360px, 360px, 50%);
   }
 
   &__info {
@@ -23,8 +20,8 @@
   }
 
   &__name {
-    @include title(1);
     margin-bottom: 8px;
+    @include title(1);
   }
 
   &__bio {
