@@ -94,18 +94,16 @@
           техническое задание или просто описание проекта своими словами.</p>
       </header>
       <form class="contacts__form contactsForm">
-        <div class="contactsForm__inputs">
-          <label for="name">
-            <input id="name" class="contacts__input" type="text" placeholder="Как вас зовут?"/>
-          </label>
-          <label for="email">
-            <input id="email" class="contacts__input" type="email" placeholder="Почтовый ящик?"/>
-          </label>
-        </div>
-        <label for="message">
-          <textarea id="message" class="contacts__textarea" placeholder="Сообщение"></textarea>
+        <label for="name" class="contactsForm__input">
+          <input id="name" name="name" type="text" placeholder="Как вас зовут?"/>
         </label>
-        <button class="contacts__button">Отправить</button>
+        <label for="email" class="contactsForm__input">
+          <input id="email" name="email" type="email" placeholder="Почтовый ящик?"/>
+        </label>
+        <label for="message" class="contactsForm__textarea">
+          <textarea id="message" name="message" placeholder="Сообщение"></textarea>
+        </label>
+        <button class="contactsForm__button" type="submit">Отправить</button>
       </form>
     </section>
   </div>

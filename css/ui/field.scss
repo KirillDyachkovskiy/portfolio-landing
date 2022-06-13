@@ -1,0 +1,28 @@
+@import "../variables";
+
+@mixin field($background: $field-background, $color: $field-color, $border: $field-border-color) {
+  input, textarea {
+    height: 100%;
+    width: 100%;
+    appearance: none;
+    border: 1px solid rgba($border, .2);
+    padding: 9px 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: $background;
+    color: $color;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+
+    &:focus {
+      border: 1px solid rgba($border, .3);
+    }
+
+    &::placeholder {
+      opacity: .3;
+    }
+  }
+}

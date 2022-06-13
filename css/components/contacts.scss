@@ -1,0 +1,50 @@
+@import "../ui/title";
+@import "../ui/subtitle";
+@import "../ui/title";
+@import "../ui/field";
+@import "../ui/button";
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    @include title(2);
+    margin-bottom: 16px;
+  }
+
+  &__icons {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @include subtitle();
+  }
+}
+
+.contactsForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+  &__input {
+    grid-column: span 1;
+    @include field();
+  }
+
+  &__textarea {
+    grid-column: span 2;
+    height: 136px;
+    @include field();
+  }
+
+  &__button {
+    grid-column: span 2;
+    @include button();
+  }
+}

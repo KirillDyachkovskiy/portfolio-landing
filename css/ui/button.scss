@@ -20,6 +20,7 @@
 
   &:focus {
     outline: none;
+    filter: brightness(130%);
   }
 
   &:hover {
